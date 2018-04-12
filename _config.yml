@@ -1,6 +1,6 @@
 # Site settings
 title: Chris
-SEOTitle: 人生就像一场旅行
+SEOTitle: 生 活
 header-img: img/home-bg.jpg
 email: 12405301@qq.com
 description: ""
@@ -32,7 +32,7 @@ anchorjs: true                          # if you want to customize anchor. check
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 
 
@@ -68,7 +68,7 @@ kramdown:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "不会写代码的架构师不是好的管理者"
+sidebar-about-description: "Programer"
 sidebar-avatar: /img/avatar-hux.jpeg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -85,18 +85,4 @@ friends: [
         title: "Casa",
         href: "https://casatwy.com/pages/about-me.html"
     }
-
-    # ,{
-    #     title: "Foo",
-    #     href: "#"
-    # },{
-    #     title: "Bar",
-    #     href: "#"
-    # },{
-    #     title: "Example Friends",
-    #     href: "#"
-    # },{
-    #     title: "It helps SEO",
-    #     href: "#"
-    # }
 ]
