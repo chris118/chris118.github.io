@@ -1,0 +1,52 @@
+---
+layout:     post
+title:      "create-react-app 一键发布到gh-pages"
+subtitle:   ""
+date:       2018-04-12 12:00:00
+author:     "Chris"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - React
+---
+
+
+1.新建gh-pages分支
+
+
+2.如果使用react-router 使用HashRouter,否则有客户端路由找不到问题
+
+```
+import { HashRouter, Route, Link } from 'react-router-dom'
+```
+
+3.修改项目的package.json文件，添加homepage属性
+
+```
+{
+  "name": "react-ptadmin",
+  "homepage": "https://chris118.github.io/react-ptadmin/",
+  "version": "0.1.0",
+  "private": true,
+```
+
+4.添加依赖gh-pages
+
+```
+npm i gh-pages --save-dev
+```
+
+5.package.json中添加如下配置：
+
+```
+  "scripts": {
++   "predeploy": "npm run build",
++   "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+```
+
+6.发布
+
+```
+npm run deploy
+```
